@@ -33,22 +33,3 @@ Represents a sequence of characters.
 
 - Methods include `.length`, `.charAt()`, `.indexOf()`, `.toUpperCase()`, `.toLowerCase()`, `.substring()`, `.slice()`, `.split()`, `.replace()`, and more.
 
-## Arrays and Their Methods
-
-Used to store multiple values in a single variable.
-
-- Methods include `.length`, `.push()`, `.pop()`, `.shift()`, `.unshift()`, `.indexOf()`, `.splice()`, `.slice()`, `.forEach()`, `.map()`, `.filter()`, `.reduce()`, and more.
-
-## Functions and Their Types
-
-Blocks of code designed to perform a particular task.
-
-- *Function Declaration*: Declares a function with the specified parameters.
-- *Function Expression*: A function defined inside an expression.
-- *Arrow Function*: Shorter syntax for writing function expressions.
-- *IIFE (Immediately Invoked Function Expression)*: A function that runs as soon as it is defined.
-- *Callback Function*: A function passed into another function as an argument.
-
-This document provides a primer to JavaScript's core concepts essential for beginners. Further exploration of each topic is encouraged to master JavaScript programming.
-
-
