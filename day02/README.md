@@ -1,6 +1,3 @@
-# JavaScript Essentials
-
-This document briefly outlines fundamental concepts in JavaScript, including operators, control flow statements, strings, arrays, and functions. Each concept is defined with a succinct explanation.
 
 ## Operators
 
