@@ -1,0 +1,83 @@
+Select Dropdown -> when the dropdown is present within a <select>
+
+page.getByLabel().selectOptions({label: Cold Call})
+page.selectOptions({value:LEAD_COLDCALL})
+page.selectOptions({index:4})
+
+1. By label
+2. By value
+3. By index
+
+page.locator().click();
+
+Auto Waiting
+------------
+Actionability checks
+To click a button / link
+It performs a set of checks on that web element
+1. visible on the web page
+2. stable
+3. receive events - checks any other web elements overlay above that element
+4. enabled
+
+To enter a value inside a text box
+5. editable
+
+waitForTimeout - explicit wait 
+timeout - playwright config file - implicit wait timeout: 50000
+.spec.ts 
+page.click({timeout:40000})
+default timeout:30000
+
+expect 5s by default
+
+waitForTimeout
+waitForSelector
+
+
+Alerts
+
+1. Modal dialog - cannot be inspectable
+	- Simple Alert - only one option 'Ok' - accept the alert
+	- Confirmation Alert - has two options Ok & Cancel - accept or dismiss the alert
+	- Prompt Alert - has one text box to enter the value to accept the alert
+			two options Ok & Cancel 
+2. Non modal dialog - inspectable
+	- Sweet Alert - Ok & Cancel 
+
+Methods to handle an alert
+1. To accept the alert - accept();
+2. To cancel the alert - dismiss();
+3. To get the message/info of an alert - message();
+4. To enter the value and accept the alert - accept("Ranjini")
+5. To get the type of an alert - type() 
+	if(dialog.type()==='confirm'){
+		dialog.accept();
+	} else if(dialog.type==='prompt'){
+		dialog.dismiss();
+	}
+
+
+
+Playwright autodismisses the alert - default functionality
+Frames
+- one HTML doc present inside another HTML document
+
+1. <frame> or <frameset>
+2. <iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
