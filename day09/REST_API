@@ -1,0 +1,100 @@
+API Introduction
+
+API - Application Programming Interface 
+interpreter / translator
+
+UI ---> API ---> Database
+set of instructions/protocols
+
+Tools available for API Testing
+1. Postman
+2. SoapUI - Simple Object Access Protocol
+3. Katlon Studio - supports both UI & API Testing
+4. Rest Assured - Java based library for testing RESTful APIs
+5. Swagger
+6. Insomnia
+
+Endpoint URL
+https://api.weather.com/current/?chennai
+/books?id=23
+
+
+JSON object.name
+object.courses
+object = {
+    name: Testleaf,
+    courses: [Playwright, API, Selenium, DSA]
+
+}
+response.tools.name
+response = {
+    name: Automation Testing,
+    tools:
+    {
+        name: Selenium,
+        type: [UI, API]
+
+    }
+}
+
+
+CRUD operations
+HTTPS Methods - Verbs - action to performed on a particular resource
+1. Create - POST - send the data to the server to create a new resource
+2. Read - GET - to retrieve the data from the server
+3. Update - PUT/PATCH
+PUT - update the resource that already exists on the server
+PATCH - apply partial modifications to the resource
+4. Delete - DELETE - remove the resource from the server
+
+API Headers
+Headers - pass additional information about the request/response between the client
+            and the server
+    1. Request Headers - used in HTTP requests sent by the client
+                       - commonly used HTTP request headers are
+                            i. Content-type - specifies the format of the data json, form, xml, txt, html
+                            ii. Authorization - credentials information
+                            iii. Accept - format of the response that the client expects
+    
+    2. Response Headers - include responses from the server
+                        - commonly used response headers
+                            i. Content-type - format of the data in the response body
+                            ii. Content-length - length of the response body
+                            iii. Set-cookie - cookies stored by the client for the 
+                                future requests
+
+Postman
+1. Create a new collection
+2. Add a new request - POST (to create a new data)
+3. Provide the endpoint url
+
+4d43df3593b54210da8a322efaba103f
+
+
+Basic Authentication - user identity
+Authorization - Access level
+
+Status codes
+2xx series - success
+200 - OK - response body contains the requested data
+201 - Created - a new resource is Created
+202 - Accepted - request has been accepted for processing
+204 - No Content - there is no content to send for the request
+
+3xx - Redirection
+301 - Moved Permanently - URL has been change Permanently
+302 - Found - resource is temporarily under a different URL
+304 - Not Modified - client's cached version of the requested resource is up to date
+
+4xx - Client Errors
+400 - Bad Request - invalid syantax/data
+401 - Unauthorized - failed to provide proper Authentication
+403 - Forbidden - client does not have access rights to the content
+404 - Not Found - The server cannot find the requested resource
+405 - Method Not Allowed - The request method is known by the server but is not supported by the target resource
+
+5xx Server Errors
+500 Internal Server Error - The server encountered an unexpected condition that prevented it from fulfilling the request.
+501 Not Implemented - The server does not support the functionality required to fulfill the request.
+502 Bad Gateway - The server, while acting as a gateway or proxy, received an invalid response from the upstream server.
+503 Service Unavailable - The server is not ready to handle the request, typically due to maintenance or overload.
