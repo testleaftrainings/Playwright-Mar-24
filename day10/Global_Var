@@ -1,0 +1,47 @@
+JWT - JSON Web Tokens
+header, payload, signature
+
+Global Variables
+
+1. Extract the access token from OAuth API response and save it as a global variable
+2. Pass the global variable in the authorization headers of all API
+
+API Request
+{playwright}
+apiRequest = playwright.request
+
+
+API Request Context
+
+
+
+API response
+
+
+Browser
+    |
+BrowserContext
+     1. UI/ browser related actions page = browser.newContext() 
+     2. API Request Context request.newContext()
+     apiRequestContext = request.newContext()
+     apiRequestContext.delete(url, options)
+     apiRequestContext.post(url, headers, data)
+
+
+    authHelpers
+        access token
+        storage state
+    api
+        lead.spec.ts
+            import access token from auth Helper
+            storage state
+            post test
+            get test
+            patch 
+            delete
+        opportunity.spec.ts
+            import access token from auth Helper
+            post 
+            get 
+            patch 
+            delete
