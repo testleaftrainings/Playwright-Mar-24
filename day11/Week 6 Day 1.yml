@@ -1,0 +1,59 @@
+Week 6 Day 1
+------------
+9.00AM to 10.00AM  -Reading Data from ( json file, csv files,.env file) 
+10.00AM to 10.20AM -Classroom
+10.20AM to 10.35Am -Break
+10.35AM to 11.10AM -Storage state (Skip Login) + Persistent context 
+11.10AM to 12.30PM -Test suite Structure(describe/hooks/parallel)
+12.30AM to 12.45PM -classroom
+12.45PM to 1.00PM - Debug/Pause
+
+JSON-->JS object notation
+ key value pair
+
+[ {
+ "username":"DemoSalesManager",
+ "password":"crmsfa"
+ },
+ {
+ "username":"DemoCSR",
+ "password":"crmsfa"
+ },
+ 
+]
+
+
+csv -->comma separated values
+library -->csv-parse
+npm install csv-parse
+.csv
+testId,username,password  --header
+TC001,DemoCSR,crmsfa    -- actual testdata
+TC002,DemoSalesManager,crmsfa
+
+env files -->multiple environments -->prod, qa,dev
+dotenv -->library
+npm install dotenv
+
+storageState -->skip the login 
+
+persistantContext -->to launch the page in exixting browser window(instance)
+
+
+TestRunner
+------------
+skip 
+only
+fixme -->describe testfunction is having bug to skip from execution
+describe-->to group the test()
+
+Leads-->create ,delete, update
+Accounts -->Create ,Update,Delete
+
+describe.configure 
+mode -->parallel
+     -->default-->seq -->independent
+     -->serial -->interdepedenent -->one fails the other will be skipped
+
+test.use -->to configure anything relates to the test()
+test.beforeeach -->execute beare each test()
