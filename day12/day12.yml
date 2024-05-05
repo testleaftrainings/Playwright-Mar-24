@@ -1,0 +1,56 @@
+Week 6 Day 2
+------------
+9.00AM to  9.40AM  -Remaining Test configuration
+9.40AM  to 10.30AM -CustomFixture
+10.30AM to 10.45Am -Classroom
+10.45AM to 11.00AM -Break
+11.00AM to 11.30PM -Codegenerator
+11.30AM to 12.00PM -Device Emulation
+12.00PM to 12.30PM -GeoLocation
+12.30PM to 1.00PM - Network interception
+
+playwright config.ts
+name -->testName
+testMatch --> filename
+dependencies -->testName
+
+tags -->to run paricular spec file
+grep -->global regular expression pattern
+
+Run configuration  
+npx playwright test --grep 'Smoke'-->execute the specfile with the tag matching wtih the pattern
+npx playwright test -g 'Smoke'
+npx playwright --grep Leafground -->look into the test title matches the pattern given in cli
+
+
+fixture-->default /predefined configuration
+page, context -->
+fixture -->predefined config
+
+export const test=baseTest.extend({fixturename:async({page})}=>{
+..logic..
+use(page)
+})
+
+
+npx playwright codegen
+npx playwright codegen -o generateCodeusingInspector.spec.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://forms.office.com/r/4TGQD50SPi 
