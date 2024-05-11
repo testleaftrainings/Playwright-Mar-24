@@ -1,0 +1,75 @@
+Agenda:
+------
+9.00AM to 10.15AM  -Class,Constructor and Object
+10.15AM to 10.30AM -Classroom
+10.30AM to 11.00AM -Accessmodifier ,static keyword
+11.00AM to 11.10AM -Break
+11.10AM to 12.00PM -Inheritance
+12.00PM to 12.15PM -Classroom
+12.15PM to 1.00PM  -Abstaction 
+
+
+Class -->Instance of an Object
+    -->blue print
+    -->set variables methods
+    -->template or blueprint with group of properties(variable) and methods
+
+Object->real world entity
+
+Vehicle -->car, bike,truck
+--
+gearsystem
+brakeSystem
+Accessmodifiers
+--------------
+
+define the scope of the variable/methods
+
+public -->anywhere in the prject
+private -->within the class
+   ennsapsulation -->getter and setter
+   getter --->to give permission to other classes to read the method/variable
+   setter-->to give permission to modify the value
+
+
+
+protected-->witihin the class and suclasses
+readonly -->similar to final keyword /view it but cannt be changed
+static -->class variable -->accessed directly without using obj reference
+
+
+Oops -->
+structured
+modularity
+resuability
+no redundancy
+
+maintainability
+clean code
+less complexity
+
+
+Inheritance  -->IS -A relationship
+Encapsulation-->bind the data together
+Abstraction -->hiding internal specification and showing the necessary information
+Polymorphism -->using overloading and overriding
+
+Inheritance
+ ---------
+ -inheriting the property of parent 
+ -extends
+ -class A extends class B
+ -Class A -->child/subclass/deriverd class
+ class B -->parent class/baseclass
+
+static 
+ -->class reference -->one copy of memory
+ -->deoes not requireed to create object reference to call the variables/method
+ static keyword
+ static username:string
+ static getData(){
+
+ }
+
+ npm install faker
+ npm install @faker-js/faker
