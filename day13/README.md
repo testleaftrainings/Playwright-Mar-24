@@ -5,6 +5,7 @@
 - [Static Properties and Methods](#static-properties-and-methods)
 - [Inheritance](#inheritance)
 - [Encapsulation](#encapsulation)
+- [Access Modifiers](#access-modifiers)
 
 ### Class and Objects
 Classes in TypeScript are blueprints for creating objects, such as page objects in web automation testing.
@@ -117,3 +118,36 @@ class LoginForm {
 let loginForm = new LoginForm("tester", "test123");
 loginForm.login();
 ```
+
+### Access Modifiers
+
+TypeScript provides several access modifiers to control the visibility of class members. These include:
+- `public` (default): Accessible from anywhere.
+- `private`: Only accessible within the class itself.
+- `protected`: Accessible within the class and by instances of subclasses.
+
+```typescript
+class TestEnvironment {
+    public baseUrl: string;
+    private token: string;
+    protected debugMode: boolean;
+
+    constructor(baseUrl: string, token: string, debugMode: boolean = false) {
+        this.baseUrl = baseUrl;
+        this.token = token;
+        this.debugMode = debugMode;
+    }
+
+    public connect() {
+        console.log(`Connecting to ${this.baseUrl} with token ${this.token}`);
+    }
+
+    protected logDebugInfo() {
+        if (this.debugMode) {
+            console.log("Debug mode is enabled.");
+        }
+    }
+}
+```
+
+
