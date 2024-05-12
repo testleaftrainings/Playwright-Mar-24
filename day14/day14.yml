@@ -1,0 +1,81 @@
+Today's Agenda
+--------------
+9.00AM to 10.00AM  -Abstraction
+10.00AM to 10.45AM -POM
+10.45AM to 11.10AM -classroom
+11.10AM to 11.20PM -Break
+11.20PM to 11.45PM -RetryLogic
+11.45PM to 12.15PM -CustomReporter 
+12.15PM to 1.00PM  -APIIntegration
+
+
+page reference
+ pageFixture-->hp (new hp(page)) -->loginpage  -->super(page) -->hpage
+
+
+Abstraction -->hiding the internal impl -->showing the necessary details
+interface  -->100% abstraction -->design -->implemation will be as different part..
+           -->blueprint -->no logic methods -->no implementation
+abstract class -->partially implementation
+
+
+cannot create object for the interface/abstractclass
+class extends anotherclass
+interface extends another interface
+abstract class extends abstract class
+class extends abstract class
+
+PageObjectmodel:
+
+LoginModule
+LeadModule
+AccountModule
+OpportunityModule
+ContactModule
+
+
+
+LeadModule
+  common configuration-->loginpage ,homepage,leadspage
+
+ Create,Edit,Delete
+
+Separate the page related methods from test (execution)
+Each page ->create classes for different navigation 
+
+fill()
+click()
+keyboard.press()
+innerText()
+title()
+
+
+type and Enter
+type and tab
+click() -->
+
+
+To build -POM
+--------------
+
+3 folders
+--------------
+pages -->page specific methods
+tests -->execution
+utils -->wrapper methods
+  -->testdata
+constants
+  -->env 
+  -->api
+  -->UI  -->urlConstants
+  
+
+   
+
+
+
+
+
+
+
+
